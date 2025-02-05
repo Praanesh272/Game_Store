@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch Dogs - Game Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Game Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="selling_page1.html">Games</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Game Details -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://media.gamestop.com/i/gamestop/11172138/Watch-Dogs-Legion-Bloodline-PCD-Ubisoft-Connect" 
+             class="img-fluid" alt="Watch Dogs">
+      </div>
+      <div class="col-md-6">
+        <h1>Watch Dogs</h1>
+        <p>An exciting adventure game with captivating gameplay.</p>
+        <p><strong>Price:</strong> $49.99</p>
+        <div class="mt-3">
+          <!-- Add to Cart Button -->
+          <button class="btn btn-secondary me-2" onclick="addToCart()">Add to Cart</button>
+          <!-- Buy Now Button -->
+          <button class="btn btn-primary" onclick="buyNow()">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Related Games -->
+  <div class="container mt-5">
+    <h3>Related Games</h3>
+    <div class="row">
+      <!-- Example of Related Game -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://repacklab.com/wp-content/uploads/2024/06/Chained-Together-Video-Game-Free-Download-Repacklab-2.jpg" 
+               class="card-img-top" alt="Chained Together">
+          <div class="card-body">
+            <h5 class="card-title">Chained Together</h5>
+            <p class="card-text">$39.99</p>
+            <a href="selling_page2.html" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more related games here -->
+    </div>
+  </div>
+
+  <script>
+    function addToCart() {
+      alert('The game has been added to your cart!');
+    }
+
+    function buyNow() {
+      alert('Proceeding to checkout...');
+      // Replace this alert with actual functionality for "Buy Now".
+      // Example: Redirect to checkout page
+      // window.location.href = 'checkout.html';
+    }
+  </script>
+</body>
+</html>
